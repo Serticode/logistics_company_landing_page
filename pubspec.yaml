@@ -1,0 +1,31 @@
+name: logistics_landing_page
+description: "A logistics company landing page"
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.8.3
+  dropdown_button2: ^2.3.8
+  responsive_builder: ^0.7.0
+  flutter_animate: ^2.1.0
+  avatar_glow: ^2.0.2
+  intl: ^0.18.1
+  flutter_riverpod: ^2.3.6
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: false
