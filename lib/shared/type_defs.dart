@@ -21,3 +21,23 @@ enum AppHapticFeedbackType {
 }
 
 enum FileType { image }
+
+enum DestinationCountries {
+  argentina(name: "Argentina"),
+  brazil(name: "Brazil"),
+  canada(name: "Canada"),
+  china(name: "China"),
+  france(name: "France"),
+  italy(name: "Italy"),
+  nigeria(name: "Nigeria"),
+  northKorea(name: "North Korea"),
+  russia(name: "Russia"),
+  southAfrica(name: "South Africa"),
+  uk(name: "Uk"),
+  usa(name: "Usa");
+
+  final String name;
+  const DestinationCountries({
+    required this.name,
+  });
+}

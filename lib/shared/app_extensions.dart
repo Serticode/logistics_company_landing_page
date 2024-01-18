@@ -6,8 +6,8 @@ import "package:flutter/services.dart";
 import "package:flutter_animate/flutter_animate.dart";
 import "package:flutter_screenutil/flutter_screenutil.dart";
 import "package:intl/intl.dart";
+import "package:logistics_landing_page/shared/app_colours.dart";
 import "package:logistics_landing_page/shared/type_defs.dart";
-import "package:logistics_landing_page/theme/theme.dart";
 
 //! LOG EXTENSION - THIS HELPS TO CALL A .log() ON ANY OBJECT
 extension Log on Object {
@@ -32,7 +32,7 @@ extension StringCasingExtension on String {
       .join(' ');
 }
 
-extension WidgetExtensions on double {
+extension WidgetExtensions on num {
   Widget get sizedBoxHeight => SizedBox(height: h);
 
   Widget get sizedBoxWidth => SizedBox(width: w);
@@ -41,9 +41,13 @@ extension WidgetExtensions on double {
 
   EdgeInsetsGeometry get horizontalPadding =>
       EdgeInsets.symmetric(horizontal: w);
+}
 
-  EdgeInsetsGeometry get symmetricPadding =>
-      EdgeInsets.symmetric(vertical: h, horizontal: w);
+extension SymmetricExtension on List<num> {
+  EdgeInsetsGeometry get symmetricPadding => EdgeInsets.symmetric(
+        vertical: this[0].h,
+        horizontal: this[1].w,
+      );
 }
 
 extension WidgetAnimation on Widget {
@@ -106,15 +110,6 @@ extension WidgetAnimation on Widget {
         curve: curve ?? Curves.decelerate,
       );
 }
-
-/* extension CollectionName on FileType {
-  String get collectionName {
-    switch (this) {
-      case FileType.image:
-        return "images";
-    }
-  }
-} */
 
 //!
 //! HAPTIC FEEDBACK
@@ -270,7 +265,7 @@ extension StyledTextExtension on String {
       style: TextStyle(
         height: height,
         fontSize: 30.0.sp,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight ?? FontWeight.w700,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
@@ -298,7 +293,7 @@ extension StyledTextExtension on String {
       style: TextStyle(
         height: height,
         fontSize: 16.0.sp,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight ?? FontWeight.w400,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
@@ -328,7 +323,7 @@ extension StyledTextExtension on String {
       style: TextStyle(
         fontSize: fontSize ?? 12.0.sp,
         height: height,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight ?? FontWeight.w400,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
@@ -356,7 +351,7 @@ extension StyledTextExtension on String {
       style: TextStyle(
         fontSize: 12.0,
         height: height,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight ?? FontWeight.w300,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
@@ -384,7 +379,7 @@ extension StyledTextExtension on String {
       style: TextStyle(
         height: height,
         fontSize: 14.0,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight ?? FontWeight.w300,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
@@ -411,7 +406,7 @@ extension StyledTextExtension on String {
       maxLines: maxLines,
       style: TextStyle(
         fontSize: 16.0,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
@@ -438,7 +433,7 @@ extension StyledTextExtension on String {
       maxLines: maxLines,
       style: TextStyle(
         fontSize: 24.0,
-        color: color ?? AppThemeColours.bodyText1TextColour,
+        color: color ?? AppColours.bodyText1TextColour,
         fontWeight: fontWeight ?? FontWeight.w600,
         fontFamily: fontFamily,
         fontStyle: fontStyle,
