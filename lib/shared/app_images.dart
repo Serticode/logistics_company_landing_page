@@ -17,6 +17,11 @@ abstract class AppAssets {
   static const String swap = "assets/svg/swap.svg";
   static const String boltIcon = "assets/svg/boltIcon.svg";
   static const String globeIcon = "assets/svg/globeIcon.svg";
+  static const String trackingCode = "assets/svg/trackingCode.svg";
+  static const String manCarryingBox = "assets/svg/man.svg";
+  static const String manCarryingBoxImage = "assets/png/manCarryingBox.png";
+  static const String graph = "assets/svg/graph.svg";
+  static const String truckImage = "assets/png/truck.png";
 
   //! SVG PARTNERS
   static const String boltShift = "assets/svg/boltShift.svg";

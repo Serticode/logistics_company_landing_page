@@ -28,6 +28,13 @@ abstract class AppColours {
   static const Color whiteButtonGradientTwo = Color(0xFFDFE1E7);
   static const Color whiteButtonGradientThree = Color(0xFFFFFFFF);
 
+  //! ONE PLATFORM CARD GRADIENT COLOURS
+  static const Color gradientOne = Color(0xFFFFFFFF);
+  static const Color gradientTwo = Color(0xFFF5F5F7);
+  static const Color gradientThree = Color(0xFFF1F8F9);
+  static const Color gradientFour = Color(0xFFEAEBEF);
+  static const Color cardBorderColour = Color(0xFFE8E8E8);
+
   //! BUTTON SHADOWS
   static final Color whiteButtonShadowGradientOne =
       const Color(0xFF123769).withOpacity(0.08);

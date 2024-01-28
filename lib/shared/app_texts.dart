@@ -7,6 +7,12 @@ abstract class AppTexts {
   static const String signUp = "Sign Up";
   static const String track = "Track";
 
+  //!
+  static const String ourFeatures = "Our features";
+  static const String onePlatform = "One platform endless possibilities";
+  static const String onePlatformRider =
+      "we revolutionize the logistics landscape with our cutting-edge features \ndesigned to optimize your supply chain and streamline operations";
+
   //! SENTENCES
   static const String signUpFor = "Sign up for our newsletter";
   static const String beTheFirstToKnow =
@@ -28,4 +34,19 @@ abstract class AppTexts {
   static const String swiftAndEfficient = "Swift and efficient delivery";
   static const String swiftAndEfficientRider =
       "Our Commitment to Swift and Efficient Delivery Ensures Timely Arrivals, Uncompromising Precision, and Consistent Reliability.";
+
+  //!
+  static const String onePlatformCardTitleOne = "Real-Time Tracking";
+  static const String onePlatformCardTitleTwo = "Document and Parcel Shipping";
+  static const String onePlatformCardTitleThree = "Performance Analytics";
+  static const String onePlatformCardTitleFour = "Cargo Shipping";
+
+  static const String onePlatformCardSubtitleOne =
+      "Stay informed every step of the way. Our advanced tracking system provides real-time updates on your shipments, ensuring transparency and peace of mind.";
+  static const String onePlatformCardSubtitleTwo =
+      "Simplify Global Deliveries for Your Business: Streamlined Solutions Tailored for Shipping Documents and Parcels. From Urgent Papers to Packages, Trust Our Effortless Logistics for Secure and Timely Deliveries Worldwide, Providing You Peace of Mind Every Step of the Way";
+  static const String onePlatformCardSubtitleThree =
+      "Gain a Competitive Edge with Actionable Insights: Unlock a Comprehensive Suite of Data-Driven Analytics and Reporting Tools. Dive into Detailed Reports and In-Depth Analytics, Empowering You to Fine-Tune Your Logistics Strategy, Boost Operational Efficiency, and Elevate Performance to New Heights.";
+  static const String onePlatformCardSubtitleFour =
+      "From Land to Sea, Trust Our Comprehensive Solutions to Safely Transport Your Goods Across Borders and Oceans. Partner with Us for Efficient Logistics, Ensuring Your Cargo Reaches its Destination Promptly and Securely.";
 }
