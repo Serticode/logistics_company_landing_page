@@ -14,7 +14,7 @@ class LeftSide extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
-      height: 551,
+      height: 551.0,
       width: 624.0,
       decoration: BoxDecoration(
         image: const DecorationImage(
@@ -27,8 +27,8 @@ class LeftSide extends ConsumerWidget {
         border: Border.all(width: 1, color: AppColours.appGrey200),
       ),
       child: Container(
-        height: 420,
-        width: 646,
+        height: 420.0,
+        width: 600.0,
         decoration: BoxDecoration(
           image: const DecorationImage(
             image: Svg(
@@ -39,8 +39,8 @@ class LeftSide extends ConsumerWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child: Container(
-          width: 440,
-          height: 376,
+          width: 440.0,
+          height: 376.0,
           padding: [32.0, 21.0].symmetricPadding,
           decoration: BoxDecoration(
             color: AppColours.appWhite,
@@ -57,16 +57,16 @@ class LeftSide extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               "From".txt(
-                fontSize: 17,
+                fontSize: 17.0,
                 fontWeight: FontWeight.w500,
                 color: AppColours.appGrey700,
               ),
 
-              21.0.sizedBoxHeight,
+              18.0.sizedBoxHeight,
 
               const FromDestinationSelector(),
 
-              21.0.sizedBoxHeight,
+              18.0.sizedBoxHeight,
 
               //! SWAP ICON
               Container(
@@ -83,23 +83,23 @@ class LeftSide extends ConsumerWidget {
                 ),
               ).alignCenter(),
 
-              21.0.sizedBoxHeight,
+              18.0.sizedBoxHeight,
 
               "To".txt(
-                fontSize: 17,
+                fontSize: 17.0,
                 fontWeight: FontWeight.w500,
                 color: AppColours.appGrey700,
               ),
 
-              21.0.sizedBoxHeight,
+              18.0.sizedBoxHeight,
 
               const ToDestinationSelector(),
 
-              32.0.sizedBoxHeight,
+              28.0.sizedBoxHeight,
 
               //!
               SizedBox(
-                width: 115,
+                width: 115.0,
                 child: RegularButton(
                   onTap: () {},
                   buttonText: "Send Shipment",

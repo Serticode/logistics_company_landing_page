@@ -15,6 +15,8 @@ abstract class AppAssets {
   static const String map = "assets/svg/map.svg";
   static const String mapLines = "assets/svg/map_lines.svg";
   static const String swap = "assets/svg/swap.svg";
+  static const String boltIcon = "assets/svg/boltIcon.svg";
+  static const String globeIcon = "assets/svg/globeIcon.svg";
 
   //! SVG PARTNERS
   static const String boltShift = "assets/svg/boltShift.svg";

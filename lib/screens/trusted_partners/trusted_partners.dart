@@ -14,6 +14,7 @@ class TrustedPartnersContainer extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
+      width: double.infinity,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: Svg(
@@ -92,37 +93,36 @@ class TrustedPartnersContainer extends ConsumerWidget {
             const TrackYourShipment(),
 
             //!
-            6.0.sizedBoxHeight,
+            90.0.sizedBoxHeight,
 
             //! SHIP IMAGE
-            Padding(
-              padding: [21.0, 120.0].symmetricPadding,
-              child: Container(
-                width: 1392,
-                height: 617,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
-                  image: const DecorationImage(
-                    image: AssetImage(
-                      AppAssets.shipPicture,
-                    ),
-                  ),
-                ),
-                child: Transform.scale(
-                  scale: 0.5,
-                  child: const Image(
-                    filterQuality: FilterQuality.high,
-                    image: Svg(AppAssets.playIcon),
+            Container(
+              width: 1392,
+              height: 617,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(40),
+                image: const DecorationImage(
+                  image: AssetImage(
+                    AppAssets.shipPicture,
                   ),
                 ),
               ),
+              child: Transform.scale(
+                scale: 0.5,
+                child: const Image(
+                  filterQuality: FilterQuality.high,
+                  image: Svg(AppAssets.playIcon),
+                ),
+              ),
             ),
+
+            90.0.sizedBoxHeight,
 
             //!
             const OurTrustedPartners(),
 
             //!
-            45.0.sizedBoxHeight,
+            90.0.sizedBoxHeight,
           ],
         ),
       ),
