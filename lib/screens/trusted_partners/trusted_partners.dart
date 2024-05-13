@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:logistics_landing_page/screens/trusted_partners/widget/our_trusted_partners.dart';
 import 'package:logistics_landing_page/screens/trusted_partners/widget/track_your_shipment.dart';
@@ -97,7 +98,7 @@ class TrustedPartnersContainer extends ConsumerWidget {
 
             //! SHIP IMAGE
             Container(
-              width: 1392,
+              width: 1200.w,
               height: 617,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),

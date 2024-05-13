@@ -11,9 +11,10 @@ class RightSide extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return SizedBox(
+    return Container(
       height: 551,
       width: 650.0,
+      padding: [0.0, 21.0].symmetricPadding,
 
       //!
       child: Column(

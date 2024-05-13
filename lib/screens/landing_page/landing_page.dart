@@ -9,14 +9,36 @@ import 'package:logistics_landing_page/screens/widgets/app_bar.dart';
 class LandingPage extends ConsumerWidget {
   const LandingPage({super.key});
 
+  static const pages = [
+    TrustedPartnersContainer(),
+    SizedBox(
+      height: 114,
+      width: double.infinity,
+    ), //!
+    SeamlessGlobalShipping(),
+
+    //!
+    NewsLetter(),
+
+    //!
+    Footer(),
+  ];
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(90),
-        child: TheAppBar(),
-      ),
-      body: SingleChildScrollView(
+    return Scaffold(
+        appBar: const PreferredSize(
+          preferredSize: Size.fromHeight(90),
+          child: TheAppBar(),
+        ),
+
+        //!
+        body: ListView.builder(
+          itemCount: pages.length,
+          itemBuilder: (context, index) => pages.elementAt(index),
+        )
+
+        /* const SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(
           children: [
@@ -38,7 +60,7 @@ class LandingPage extends ConsumerWidget {
             Footer()
           ],
         ),
-      ),
-    );
+      ), */
+        );
   }
 }

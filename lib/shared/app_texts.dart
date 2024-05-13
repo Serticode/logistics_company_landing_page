@@ -26,7 +26,7 @@ abstract class AppTexts {
   static const String whereDistance = "Where Distance is Just a Detail";
   static const String seamlessGlobalShipping = "Seamless Global \nShipping";
   static const String seamlessGlobalShippingRider =
-      "Sending shipments worldwide shouldn't be complicated. we streamline global logistics, making every destination feel like your doorstep. From local parcels to international cargo, trust us to bridge the miles effortlessly.";
+      "Sending shipments worldwide shouldn't be complicated. \nWe streamline global logistics, making every destination feel like your doorstep. \nFrom local parcels to international cargo, trust us to bridge the miles effortlessly.";
 
   static const String presentIn = "Present in 72 Countries Globally";
   static const String presentInRider =

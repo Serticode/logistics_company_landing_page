@@ -49,43 +49,55 @@ class OnePlatform extends ConsumerWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  CardWidget(
+                  const CardWidget(
                     width: 516,
                     height: 470,
                     title: AppTexts.onePlatformCardTitleOne,
                     subtitle: AppTexts.onePlatformCardSubtitleOne,
                     image: AppAssets.trackingCode,
                     isImage: false,
-                  ),
-                  CardWidget(
+                  ).fadeInFromBottom(),
+                  const CardWidget(
                     width: 756,
                     height: 470,
                     title: AppTexts.onePlatformCardTitleTwo,
                     subtitle: AppTexts.onePlatformCardSubtitleTwo,
                     image: AppAssets.manCarryingBoxImage,
                     isImage: true,
-                  )
+                  ).fadeInFromBottom(
+                    delay: const Duration(
+                      milliseconds: 500,
+                    ),
+                  ),
                 ],
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  CardWidget(
+                  const CardWidget(
                     width: 756,
                     height: 470,
                     title: AppTexts.onePlatformCardTitleThree,
                     subtitle: AppTexts.onePlatformCardSubtitleThree,
                     image: AppAssets.graph,
                     isImage: false,
+                  ).fadeInFromBottom(
+                    delay: const Duration(
+                      milliseconds: 900,
+                    ),
                   ),
-                  CardWidget(
+                  const CardWidget(
                     width: 516,
                     height: 470,
                     title: AppTexts.onePlatformCardTitleFour,
                     subtitle: AppTexts.onePlatformCardSubtitleFour,
                     image: AppAssets.truckImage,
                     isImage: true,
+                  ).fadeInFromBottom(
+                    delay: const Duration(
+                      milliseconds: 1200,
+                    ),
                   ),
                 ],
               ),
